@@ -25,7 +25,7 @@ const ARTICLES = [
 export function Articles() {
   return (
     <section className="container mx-auto px-8 py-20">
-      <Typography variant="h2" color="blue-gray">
+      <Typography variant="h2" color="blue-gray" className="mb-2">
         Other Articles
       </Typography>
       <Typography
