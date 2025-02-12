@@ -27,8 +27,8 @@ export function BlogPostCard({
   date,
 }: BlogPostCardProps) {
   return (
-    <Card shadow={true}>
-      <CardHeader>
+    <Card shadow={true} {...({} as any)}>
+      <CardHeader {...({} as any)}>
         <Image
           width={768}
           height={768}
@@ -37,8 +37,8 @@ export function BlogPostCard({
           className="h-full w-full scale-110 object-cover"
         />
       </CardHeader>
-      <CardBody className="p-6">
-        <Typography variant="small" color="blue" className="mb-2 !font-medium">
+      <CardBody className="p-6" {...({} as any)}>
+        <Typography variant="small" color="blue" className="mb-2 !font-medium" {...({} as any)}>
           {tag}
         </Typography>
         <Typography
@@ -47,10 +47,11 @@ export function BlogPostCard({
           variant="h5"
           color="blue-gray"
           className="mb-2 normal-case transition-colors hover:text-gray-900"
+          {...({} as any)}
         >
           {title}
         </Typography>
-        <Typography className="mb-6 font-normal !text-gray-500">
+        <Typography className="mb-6 font-normal !text-gray-500" {...({} as any)}>
           {desc}
         </Typography>
         <div className="flex items-center gap-4">
@@ -59,12 +60,14 @@ export function BlogPostCard({
             variant="circular"
             src={author.img}
             alt={author.name}
+            {...({} as any)}
           />
           <div>
             <Typography
               variant="small"
               color="blue-gray"
               className="mb-0.5 !font-medium"
+              {...({} as any)}
             >
               {author.name}
             </Typography>
@@ -72,6 +75,7 @@ export function BlogPostCard({
               variant="small"
               color="gray"
               className="text-xs !text-gray-500 font-normal"
+              {...({} as any)}
             >
               {date}
             </Typography>
