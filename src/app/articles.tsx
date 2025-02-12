@@ -25,12 +25,13 @@ const ARTICLES = [
 export function Articles() {
   return (
     <section className="container mx-auto px-8 py-20">
-      <Typography variant="h2" color="blue-gray" className="mb-2">
+      <Typography variant="h2" color="blue-gray" className="mb-2"   {...({} as any)}>
         Other Articles
       </Typography>
       <Typography
         variant="lead"
         className="my-2 w-full font-normal !text-gray-500 lg:w-5/12"
+        {...({} as any)}
       >
         Check out what&apos;s new in the web development and tech worls! Do not
         forget to subscribe to our blog and we will notify you with the latest
