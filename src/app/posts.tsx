@@ -86,26 +86,27 @@ export function Posts() {
     <section className="grid min-h-screen place-items-center p-8">
       <Tabs value="trends" className="mx-auto max-w-7xl w-full mb-16 ">
         <div className="w-full flex mb-8 flex-col items-center">
-          <TabsHeader className="h-10 !w-12/12 md:w-[50rem] border border-white/25 bg-opacity-90">
-            <Tab value="trends">Trends</Tab>
-            <Tab value="frontend">Frontend</Tab>
-            <Tab value="backend">Backend</Tab>
-            <Tab value="cloud">Cloud</Tab>
-            <Tab value="ai">AI</Tab>
-            <Tab value="tools">Tools</Tab>
+          <TabsHeader className="h-10 !w-12/12 md:w-[50rem] border border-white/25 bg-opacity-90" {...({} as any)}>
+            <Tab value="trends" {...({} as any)}>Trends</Tab>
+            <Tab value="frontend" {...({} as any)}>Frontend</Tab>
+            <Tab value="backend"{...({} as any)}>Backend</Tab>
+            <Tab value="cloud"{...({} as any)}>Cloud</Tab>
+            <Tab value="ai"{...({} as any)}>AI</Tab>
+            <Tab value="tools"{...({} as any)}>Tools</Tab>
           </TabsHeader>
         </div>
       </Tabs>
-      <Typography variant="h6" className="mb-2">
+      <Typography variant="h6" className="mb-2" {...({} as any)}> 
         Latest Blog Posts
       </Typography>
-      <Typography variant="h1" className="mb-2">
+      <Typography variant="h1" className="mb-2" {...({} as any)}>
         Trends News
       </Typography>
       <Typography
         variant="lead"
         color="gray"
         className="max-w-3xl mb-36 text-center text-gray-500"
+        {...({} as any)}
       >
         Check out what&apos;s new in the web development and tech worls! Do not
         forget to subscribe to our blog and we will notify you with the latest
@@ -132,6 +133,7 @@ export function Posts() {
         size="lg"
         color="gray"
         className="flex items-center gap-2 mt-24"
+        {...({} as any)}
       >
         <ArrowSmallDownIcon className="h-5 w-5 font-bold text-gray-900" />
         VIEW MORE
